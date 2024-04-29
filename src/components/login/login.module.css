@@ -1,0 +1,62 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--margin);
+  min-width: 300px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: small;
+  font-weight: lighter;
+}
+
+.buttons {
+  display: flex;
+  gap: var(--margin);
+}
+
+.submit,
+.clear {
+  flex: 1;
+  border: none;
+  height: 32px;
+  font-size: medium;
+  border-radius: var(--border-radius);
+  background-color: var(--text-color);
+  color: var(--bg-color);
+
+  &:hover {
+    border: 2px solid aqua;
+  }
+}
+
+.clear {
+  border: 1px solid var(--text-color);
+  background-color: #00000000;
+  color: var(--text-color);
+  flex: 1;
+}
+
+.errorMessage {
+  font-size: small;
+  color: var(--error-color);
+  font-style: italic;
+}

@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  gap: 1rem;
+}
+
+.logoff {
+  min-width: 54px;
+  border-radius: var(--border-radius);
+  min-height: 32px;
+  border: none;
+
+  &&:hover {
+    border: 2px solid var(--accent-color);
+  }
+}
